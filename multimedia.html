@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Multimedia & Embedding in HTML</title>
+</head>
+
+<body>
+ 
+  <header>
+  
+  
+   <nav>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="text.html">Text Formatting</a></li>
+        <li><a href="list-table.html">Lists</a></li>
+        <li><a href="multimedia.html">Multimedia</a></li>
+        <li><a href="contact.html">Contact Form</a></li>
+      </ul>
+    </nav>
+  </header>
+
+
+  <main>
+  <h1>Multimedia, Embedding & Interactive HTML5 Elements</h1>
+    <p>
+      Multimedia enhances the user experience by adding images, audio, video, and interactive content.
+      Embedding allows you to include external content like YouTube videos or other media directly on your page.
+    </p>
+
+    
+    <section>
+      <h2>1️⃣ Images Gallery</h2>
+      <p>Images can be displayed individually or as a gallery using <code>&lt;figure&gt;</code> and <code>&lt;figcaption&gt;</code>.</p>
+
+      <article>
+        <figure>
+          <img src="images/html5-logo.png" alt="HTML5 Logo" width="200" height="150">
+          <figcaption><h4>HTML5 Logo</h4></figcaption>
+        </figure>
+
+        <figure>
+          <img src="images/CSS-Logo.png" alt="CSS3 Logo" width="200" height="150">
+          <figcaption><h4>CSS3 Logo</h4></figcaption>
+        </figure>
+
+        <figure>
+          <img src="images/javascript-logo.png" alt="JavaScript Logo" width="200" height="150">
+          <figcaption>JavaScript Logo</figcaption>
+        </figure>
+      </article>
+    </section>
+
+    <hr>
+
+  
+    <section>
+      <h2>2️⃣ Audio Example</h2>
+      <p>The <code>&lt;audio&gt;</code> tag is used to embed audio with controls.</p>
+
+      <audio controls>
+        <source src="naat.mp3">
+        
+      </audio>
+    </section>
+
+    <hr>
+
+   
+    <section>
+      <h2>3️⃣ Video Gallery</h2>
+      <p>HTML5 <code>&lt;video&gt;</code> allows embedding videos with controls.</p>
+
+      <article>
+        <figure>
+          <video width="300" height="200" controls >
+            <source src="HTML5.mp4" type="video/mp4">
+        
+          </video>
+          <figcaption><h4>Introduction to HTML5</h4></figcaption>
+        </figure>
+
+        <figure>
+          <video width="300" height="200" controls >
+            <source src="CSS-Introduction.mp4" type="video/mp4">
+        
+          </video>
+          <figcaption><h4>CSS3 Basics</h4></figcaption>
+        </figure>
+      </article>
+    </section>
+
+    <hr>
+
+  
+    <section>
+      <h2>4️⃣ Embedded Content</h2>
+      <p>Embedding allows you to include external content such as YouTube videos using <code>&lt;iframe&gt;</code>.</p>
+
+      <article>
+        <h3>Example: YouTube Video</h3>
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/dD2EISBDjWM" title="YouTube video player"
+          frameborder="0" allowfullscreen></iframe>
+        <p>Definition: The <code>&lt;iframe&gt;</code> tag embeds another HTML page or content inside your webpage.</p>
+      </article>
+    </section>
+
+    <hr>
+
+    
+    <section>
+      <h2>5️⃣ Interactive HTML5 Elements</h2>
+
+      <article>
+        <h3>Collapsible Section</h3>
+        <details>
+          <summary>Click here to expand content</summary>
+          <p>This content is hidden by default and is revealed when you click the summary.</p>
+        </details>
+
+        <h3>Progress Bar</h3>
+        <progress value="70" max="100">70%</progress>
+
+        <h3>Abbreviation & Highlighting</h3>
+        <p>The abbreviation <abbr title="HyperText Markup Language">HTML</abbr> is the standard language for web pages.</p>
+        <p>This is an important term: <mark>Multimedia</mark></p>
+      </article>
+    </section>
+
+  </main>
+
+  
+  <footer>
+    <address>
+      Web Education Portal<br>
+      Email: <a href="mailto:imranaziz43518@gmail.com">imranaziz43518@gmail.com</a>
+    </address>
+    <p><small>© 2025 Web Education Portal | Multimedia & Embedding Demonstration</small></p>
+  </footer>
+</body>
+</html>

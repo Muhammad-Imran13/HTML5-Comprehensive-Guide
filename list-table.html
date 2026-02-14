@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>HTML Lists and Tables</title>
+</head>
+
+<body>
+ 
+  <header>
+     <nav>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="text.html">Text Formatting</a></li>
+        <li><a href="list-table.html">Lists</a></li>
+        <li><a href="multimedia.html">Multimedia</a></li>
+        <li><a href="contact.html">Contact Form</a></li>
+      </ul>
+    </nav>
+  </header>
+
+ 
+  <main>
+ <h1>HTML Lists and Tables</h1>
+    <p>
+      Lists and tables are essential tools for organizing content in a clear, structured way.
+      Lists group related items, while tables arrange data into rows and columns.
+    </p>
+
+   
+    <section>
+      <h2>1️⃣ HTML Lists</h2>
+      <p>
+        Lists are used to group related pieces of information.  
+        There are three main types: <strong>unordered lists</strong>, <strong>ordered lists</strong>, and
+        <strong>description lists</strong>.
+      </p>
+
+     
+      <article>
+        <h3>🔹 Unordered List (Bulleted)</h3>
+        <p>The <code>&lt;ul&gt;</code> tag creates a bulleted list.</p>
+        <ul>
+          <li>HTML</li>
+          <li>CSS</li>
+          <li>JavaScript</li>
+        </ul>
+      </article>
+
+    
+      <article>
+        <h3>🔹 Ordered List (Numbered)</h3>
+        <p>The <code>&lt;ol&gt;</code> tag creates a numbered list. You can also use different numbering styles.</p>
+
+        <h4>Default (1, 2, 3...)</h4>
+        <ol>
+          <li>Plan</li>
+          <li>Design</li>
+          <li>Develop</li>
+        </ol>
+
+        <h4>Uppercase Letters (A, B, C...)</h4>
+        <ol type="A">
+          <li>Introduction</li>
+          <li>Body</li>
+          <li>Conclusion</li>
+        </ol>
+      </article>
+
+     
+      <article>
+        <h3>🔹 Nested List (List inside another)</h3>
+        <p>You can place lists inside other lists for detailed structure.</p>
+
+        <ul>
+          <li>Frontend
+            <ul>
+              <li>HTML</li>
+              <li>CSS</li>
+              <li>JavaScript</li>
+            </ul>
+          </li>
+          <li>Backend
+            <ul>
+              <li>Node.js</li>
+              <li>PHP</li>
+              <li>Python</li>
+            </ul>
+          </li>
+        </ul>
+      </article>
+
+      
+      <article>
+        <h3>🔹 Description List</h3>
+        <p>
+          The <code>&lt;dl&gt;</code> element is used for terms and their descriptions.
+        </p>
+
+        <dl>
+          <dt>HTML</dt>
+          <dd>Defines the structure of a webpage.</dd>
+          <dt>CSS</dt>
+          <dd>Styles and designs web content.</dd>
+          <dt>JavaScript</dt>
+          <dd>Adds interactivity to web pages.</dd>
+        </dl>
+      </article>
+    </section>
+
+    <hr>
+
+    
+    <section>
+      <h2>2️⃣ HTML Tables</h2>
+      <p>
+        Tables are used to display structured data in rows and columns.  
+        A table is made up of <code>&lt;table&gt;</code>, <code>&lt;tr&gt;</code> (table row),
+        <code>&lt;th&gt;</code> (header cell), and <code>&lt;td&gt;</code> (data cell) elements.
+      </p>
+
+      
+      <article>
+        <h3>🔹 Basic Table Example</h3>
+        <table border="1">
+          <caption>Student Grades</caption>
+          <thead>
+            <tr>
+              <th>Student</th>
+              <th>Subject</th>
+              <th>Grade</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Imran</td>
+              <td>Mathematics</td>
+              <td>A</td>
+            </tr>
+            <tr>
+              <td>Shoaib</td>
+              <td>Science</td>
+              <td>B+</td>
+            </tr>
+            <tr>
+              <td>Mujahid</td>
+              <td>History</td>
+              <td>A-</td>
+            </tr>
+          </tbody>
+          <tfoot>
+            <tr>
+              <td colspan="3">Data collected from internal exam results.</td>
+            </tr>
+          </tfoot>
+        </table>
+      </article>
+
+      
+      <article>
+        <h3>🔹 Table with Merged Cells</h3>
+        <p>Tables can use <code>rowspan</code> and <code>colspan</code> attributes to merge cells.</p>
+
+        <table border="1">
+          <caption>Weekly Schedule</caption>
+          <thead>
+            <tr>
+              <th>Day</th>
+              <th colspan="2">Activities</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Monday</td>
+              <td>HTML Practice</td>
+              <td>Project Work</td>
+            </tr>
+            <tr>
+              <td rowspan="2">Tuesday</td>
+              <td>Lecture</td>
+              <td>Lab Session</td>
+            </tr>
+            <tr>
+              <td>Revision</td>
+              <td>Assignments</td>
+            </tr>
+          </tbody>
+        </table>
+      </article>
+    </section>
+  </main>
+
+ 
+  <footer>
+    <p><small>&copy; 2025 Web development | Lists and Tables Demonstration</small></p>
+  </footer>
+</body>
+</html>

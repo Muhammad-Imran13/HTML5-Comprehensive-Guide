@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact Full HTML5 Form</title>
+</head>
+<body>
+ 
+  <header>
+    
+   <nav>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="text.html">Text Formatting</a></li>
+        <li><a href="list-table.html">Lists</a></li>
+        <li><a href="multimedia.html">Multimedia</a></li>
+        <li><a href="contact.html">Contact Form</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <h1>Contact Us – Full HTML5 Form Demonstration</h1>
+    <p>
+  Welcome to our Contact Page! Here you can reach us through multiple channels including phone, email, or by visiting our office. 
+  Use the form below to send us a message. This form demonstrates all HTML5 input types, validation attributes, and interactive elements to help you learn web development practically.
+</p>
+
+    <section>
+      <h2>Contact Information</h2>
+      <address>
+        Phone: <a href="tel:0303-4286335">0303‑4286335</a><br>
+        Email: <a href="mailto:imranaziz43518@gmail.com">imranaziz43518@gmail.com</a><br>
+        Address: ConsulNet Corp, Karachi, Pakistan
+      </address>
+
+      <h3>Map Location</h3>
+      
+      <iframe
+        width="600"
+        height="450"
+        style="border:0"
+        loading="lazy"
+        allowfullscreen
+        src="https://maps.google.com/maps?q=ConsulNet%20Corp%20Karachi&t=&z=15&ie=UTF8&iwloc=&output=embed">
+      </iframe>
+      <p><small>Map shows the location of ConsulNet Corporation in Karachi.</small></p>
+    </section>
+
+    <section>
+      <h2>Send Us a Message</h2>
+      <form action="#" method="post" enctype="multipart/form-data" autocomplete="on">
+        
+        <fieldset>
+          <legend>Personal Information</legend>
+
+          <label for="fullname">Full Name:</label><br>
+          <input type="text" id="fullname" name="fullname" placeholder="Enter your full name" required minlength="3" maxlength="50"><br><br>
+
+          <label for="email">Email Address:</label><br>
+          <input type="email" id="email" name="email" placeholder="example@gmail.com" required><br><br>
+
+          <label for="phone">Phone Number:</label><br>
+          <input type="tel" id="phone" name="phone" pattern="[0-9]{4}-[0-9]{7}" placeholder="0300-0000000" required><br><br>
+
+          <label for="password">Password (for demonstration):</label><br>
+          <input type="password" id="password" name="password" placeholder="Enter a password" required minlength="6"><br><br>
+
+          <label for="url">Your Website (optional):</label><br>
+          <input type="url" id="url" name="url" placeholder="https://example.com"><br><br>
+
+          <label for="age">Age:</label><br>
+          <input type="number" id="age" name="age" min="1" max="120"><br><br>
+
+          <label for="birthdate">Birth Date:</label><br>
+          <input type="date" id="birthdate" name="birthdate"><br><br>
+
+          <label for="appt">Preferred Time:</label><br>
+          <input type="time" id="appt" name="appt"><br><br>
+
+          <label for="datetime">Appointment Date & Time:</label><br>
+          <input type="datetime-local" id="datetime" name="datetime"><br><br>
+
+          <label for="month">Select Month:</label><br>
+          <input type="month" id="month" name="month"><br><br>
+
+          <label for="week">Select Week:</label><br>
+          <input type="week" id="week" name="week"><br><br>
+
+          <label for="range">Satisfaction Level:</label><br>
+          <input type="range" id="range" name="range" min="0" max="10"><br><br>
+
+          <label for="color">Favorite Color:</label><br>
+          <input type="color" id="color" name="color" value="#ff0000"><br><br>
+        </fieldset>
+
+        <fieldset>
+          <legend>Message & Preferences</legend>
+
+          <label for="subject">Subject:</label><br>
+          <input type="text" id="subject" name="subject" required><br><br>
+
+          <label for="message">Message:</label><br>
+          <textarea id="message" name="message" rows="5" required minlength="10"></textarea><br><br>
+
+          <p>Preferred Contact Method:</p>
+          <input type="radio" id="contact-email" name="contact-method" value="email" checked>
+          <label for="contact-email">Email</label><br>
+          <input type="radio" id="contact-phone" name="contact-method" value="phone">
+          <label for="contact-phone">Phone</label><br><br>
+
+          <input type="checkbox" id="updates" name="updates" value="yes">
+          <label for="updates">Receive updates via email</label><br><br>
+
+          <label for="category">Category:</label><br>
+          <select id="category" name="category" required>
+            <option value="">-- Select --</option>
+            <option value="general">General Inquiry</option>
+            <option value="feedback">Feedback</option>
+            <option value="support">Support Request</option>
+          </select><br><br>
+
+          <label for="multi-category">Select Multiple Interests:</label><br>
+          <select id="multi-category" name="multi-category" multiple>
+            <option value="html">HTML</option>
+            <option value="css">CSS</option>
+            <option value="js">JavaScript</option>
+            <option value="media">Multimedia</option>
+          </select><br><br>
+
+          <label for="file">Upload a file (optional):</label><br>
+          <input type="file" id="file" name="file"><br><br>
+
+          <input type="hidden" name="hiddenField" value="12345">
+        </fieldset>
+
+      
+        <fieldset>
+          <legend>Form Actions</legend>
+          <input type="submit" value="Send Message">
+          <input type="reset" value="Reset Form">
+          <button type="button" onclick="alert('This is a demo button!')">Demo Button</button>
+        </fieldset>
+      </form>
+    </section>
+
+  
+    <section>
+      <h2>Form Usage Details</h2>
+      <p>This form demonstrates the following HTML5 input types and attributes:</p>
+      <ul>
+        <li><code>text</code> with <code>required</code>, <code>minlength</code>, <code>maxlength</code></li>
+        <li><code>email</code> for validated email addresses</li>
+        <li><code>tel</code> with pattern validation</li>
+        <li><code>password</code> for secure input</li>
+        <li><code>url</code> for website addresses</li>
+        <li><code>number</code> with min/max limits</li>
+        <li><code>date</code>, <code>time</code>, <code>datetime-local</code>, <code>month</code>, <code>week</code></li>
+        <li><code>range</code> slider</li>
+        <li><code>color</code> picker</li>
+        <li><code>textarea</code> for multiline messages</li>
+        <li><code>radio</code> buttons for single choice selection</li>
+        <li><code>checkbox</code> for multiple selection</li>
+        <li><code>select</code> dropdowns (single & multiple)</li>
+        <li><code>file</code> upload</li>
+        <li><code>hidden</code> field</li>
+        <li>Buttons: <code>submit</code>, <code>reset</code>, <code>button</code></li>
+        <li>Grouping with <code>fieldset</code> and <code>legend</code></li>
+        <li>Validation: <code>required</code>, <code>pattern</code>, <code>minlength</code>, <code>maxlength</code>, <code>min</code>, <code>max</code>, <code>step</code></li>
+        <li>Placeholder text and autocomplete attribute</li>
+      </ul>
+    </section>
+
+  </main>
+
+  <footer>
+    <p><small>&copy; 2025 Web Education Portal | Full HTML5 Form Demonstration</small></p>
+  </footer>
+</body>
+</html>
